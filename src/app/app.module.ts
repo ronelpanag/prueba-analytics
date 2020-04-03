@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 import { environment } from 'src/environments/environment';
 
 
@@ -19,7 +21,8 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAnalyticsModule
+    AngularFireAnalyticsModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
