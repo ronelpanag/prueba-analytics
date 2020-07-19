@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public items = [
+    { name: 'Comentarios', link: '' },
+    { name: 'Comunidades', link: '' },
+    { name: 'Eventos', link: '' },
+    { name: 'Charlistas', link: '' },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
