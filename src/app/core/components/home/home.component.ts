@@ -11,9 +11,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.collection = [
-      {className: 'card1 customCard'},
-      {className: 'card2 customCard'},
-      {className: 'card3 customCard'},
+      {className: 'card1 custom-card'},
+      {className: 'card2 custom-card'},
+      {className: 'card3 custom-card'},
     ]
   }
 

@@ -1,4 +1,4 @@
-.generalContainer{
+.general-container{
     width: 100vw;
     height: 100vh;
     margin: 0px;
@@ -6,14 +6,14 @@
     overflow: hidden;
     background-color: #030303;
 }
-.customTitle{
+.custom-title{
     font-size: 5.5vw;
     color: #ffffff;
     margin-top: 12vh;
     margin-left: 5vw;
     margin-right: 2.5vw;
 }
-.customDescription{
+.custom-description{
     font-size: 0.8vw;
     font-weight: lighter;
     color: #9C9A9E;
@@ -42,31 +42,6 @@
     overflow: hidden;
     overflow-y: auto;
 }
-.customCard{
-    float: right;
-    width: 100%;
-    height: 21vh;
-    background-color: #131313;
-    margin-bottom: 1vh;
-}
-.customCard:hover{
-    background-color: red;
-}
-.customArea{
-    font-size: 0.8vw;
-    margin-top: 5vh;
-    margin-left: 5vw;
-    font-weight: bold;
-    color: #d7d7d8;
-    letter-spacing: 0.2vw;
-}
-.customName{
-    font-size: 2vw;
-    margin-top: 1.5vh;
-    margin-left: 5vw;
-    color: #9C9A9E;
-    letter-spacing: 0.2vw;
-}
 .descriptionArea{
     font-size: 0.8vw;
     margin-top: 1vh;
@@ -79,17 +54,17 @@
     width: 2px;
     height: 2px;
   }
-  
+
   /* Track */
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
-  
+
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #555;

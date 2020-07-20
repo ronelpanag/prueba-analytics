@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-
+import { RatingModule } from 'ng-starrating';
+import { TalkCardComponent } from './components/talk-card/talk-card.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [TalkCardComponent],
   imports: [
     CommonModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    RatingModule
   ],
   exports: [
-    MDBBootstrapModule
+    MDBBootstrapModule,
+    RatingModule
   ]
 })
 export class SharedModule { }
