@@ -1,27 +1,19 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-dark" [containerInside]="false">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark bg-dark p-3" [containerInside]="false">
 
   <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Charlas en RD</a></mdb-navbar-brand>
+  <mdb-navbar-brand><a class="navbar-brand" [routerLink]="['./home']">Charlas en RD</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
-
-    <!-- Links -->
-    <ul class="navbar-nav mr-auto">
-      <li *ngFor="let item of items" class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>
+    <ul class="navbar-nav ml-5 mr-auto">
+      <li *ngFor="let item of items" class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <a class="nav-link waves-light"
+            mdbWavesEffect
+            [routerLink]=[item.link]>
           {{item.name}}
         </a>
       </li>
     </ul>
-    <!-- Links -->
-
-    <!-- Search form -->
-    <form class="form-inline waves-light" mdbWavesEffect>
-      <div class="md-form my-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      </div>
-    </form>
   </links>
   <!-- Collapsible content -->
 

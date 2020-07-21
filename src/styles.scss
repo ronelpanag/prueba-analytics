@@ -7,6 +7,17 @@
    font-family: 'Product Sans';
    src: url('./assets/fonts/ProductSans-Regular.ttf');
 }
+
 *{
    font-family: 'Product Sans', sans-serif;
+}
+
+.general-container{
+  width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #030303;
+  color: whitesmoke;
 }

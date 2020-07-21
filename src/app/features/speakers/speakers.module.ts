@@ -6,6 +6,7 @@ import { DetailsComponent } from './details/details.component';
 import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { NewComponent } from './new/new.component';
+import { SpeakersService } from './speakers.service';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { NewComponent } from './new/new.component';
   imports: [
     CommonModule,
     SpeakersRoutingModule
-  ]
+  ],
+  providers: [ SpeakersService ]
 })
 export class SpeakersModule { }
