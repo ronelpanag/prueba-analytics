@@ -1,0 +1,8 @@
+<div class="container-fluid p-4">
+  <span class="h1 font-weight-normal"><u>Eventos</u></span>
+  <div class="row mt-4 justify-content-center">
+    <div *ngFor="let talk of talks" class="col-md-4">
+      <app-talk-card [item]="talk"></app-talk-card>
+    </div>
+  </div>
+</div>

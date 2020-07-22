@@ -1,3 +1,4 @@
+import { SharedModule } from './../../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,7 +14,8 @@ import { SpeakersService } from './speakers.service';
   declarations: [DetailsComponent, ListComponent, EditComponent, NewComponent],
   imports: [
     CommonModule,
-    SpeakersRoutingModule
+    SpeakersRoutingModule,
+    SharedModule
   ],
   providers: [ SpeakersService ]
 })

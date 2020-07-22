@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import { RatingModule } from 'ng-starrating';
 import { TalkCardComponent } from './components/talk-card/talk-card.component';
 import { BaseHttpService } from './framework/base-http.service';
+import { NgRatingBarModule } from 'ng-rating-bar';
 
 
 @NgModule({
@@ -11,11 +11,12 @@ import { BaseHttpService } from './framework/base-http.service';
   imports: [
     CommonModule,
     MDBBootstrapModule.forRoot(),
-    RatingModule
+    NgRatingBarModule
   ],
   exports: [
     MDBBootstrapModule,
-    RatingModule
+    TalkCardComponent,
+    NgRatingBarModule
   ],
   providers: [BaseHttpService]
 })

@@ -8,7 +8,7 @@ import { EditComponent } from '../speakers/edit/edit.component';
 
 const routes: Routes = [
   { path: '', component: ListComponent },
-  { path: '/:id', component: DetailsComponent },
+  { path: 'detail/:id', component: DetailsComponent },
   { path: 'new', component: NewComponent },
   { path: 'edit', component: EditComponent }
 ];

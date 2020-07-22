@@ -1,5 +1,20 @@
-<div class="custom-card">
-  <h3 class="custom-area"> {{communityName}} </h3>
-  <h3 class="customName">{{talkName}}</h3>
-  <h3 class="descriptionArea">{{speakerName}}</h3>
+<div class="card mb-3 custom-card" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <!-- <img [src]="item.image" [alt]="item.firstName" class="card-image"> -->
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+      <span class="custom-area text-uppercase"> {{item.community}} </span><br>
+        <p class="card-text custom-name">{{item.name}}</p>
+        <p class="text-truncate">{{item.description}}</p>
+        <ng-rating-bar [(value)]="item.rating"
+                       [ratingCount]="5"
+                       [disabled]="true">
+        </ng-rating-bar>
+
+        <p class="card-text descriptionArea"><small class="text-muted"><a class="text-decoration-underline">Ver detalles</a></small></p>
+      </div>
+    </div>
+  </div>
 </div>
