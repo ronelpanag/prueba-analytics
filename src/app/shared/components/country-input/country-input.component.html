@@ -1,0 +1,10 @@
+
+<input [(ngModel)]="selected"
+       [typeahead]="countries"
+       class="form-control white-text"
+       typeaheadOptionField="name"
+       [typeaheadScrollable]="true"
+       type="text"
+       [typeaheadOptionsInScrollableView]="5"
+       mdbInput/>
+<label for="country" class="">Pais</label>

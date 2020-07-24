@@ -14,4 +14,10 @@ export class SpeakersService {
 
     return this.baseHttp.httpGet<Speaker[]>(request);
   }
+
+  createSpeaker(parameter: Speaker) {
+    const request = this.baseHttp.createHttpRequest('/speakers', parameter);
+
+    return this.baseHttp.httpPost<number>(request);
+  }
 }

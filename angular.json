@@ -25,7 +25,17 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/svg-country-flags/svg",
+                "output": "src/assets/svg-country-flags/svg"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/svg-country-flags/svg",
+                "output": "assets/svg-country-flags/svg"
+              }
             ],
             "styles": [
               "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
@@ -133,6 +143,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "prueba-analytics"
 }

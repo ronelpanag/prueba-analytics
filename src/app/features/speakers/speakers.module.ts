@@ -8,6 +8,7 @@ import { ListComponent } from './list/list.component';
 import { EditComponent } from './edit/edit.component';
 import { NewComponent } from './new/new.component';
 import { SpeakersService } from './speakers.service';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +16,9 @@ import { SpeakersService } from './speakers.service';
   imports: [
     CommonModule,
     SpeakersRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [ SpeakersService ]
 })

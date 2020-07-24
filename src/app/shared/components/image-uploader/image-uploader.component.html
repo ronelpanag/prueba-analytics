@@ -1,0 +1,8 @@
+<ngx-dropzone (change)="onSelect($event)"
+              [multiple]="false"
+              [accept]="fileTypeAccepted">
+  <ngx-dropzone-label><i class="fa fa-plus fa-2x"></i></ngx-dropzone-label>
+  <app-custom-dropzone-preview ngProjectAs="ngx-dropzone-preview"
+                              *ngFor="let f of files" [file]="f">
+  </app-custom-dropzone-preview>
+</ngx-dropzone>

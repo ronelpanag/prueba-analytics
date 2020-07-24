@@ -1,5 +1,5 @@
 <button type="button" mdbBtn
-        color="primary" class="relative waves-light"
+        color="dark" class="relative waves-light"
         (click)="basicModal.show()" mdbWavesEffect>
         Agregar Charlista
 </button>
@@ -7,16 +7,78 @@
 <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
-      <div class="modal-header bg-dark">
+      <div class="modal-header">
         <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
-          <span aria-hidden="true">×</span>
+          <span style="color: white;" aria-hidden="true">×</span>
         </button>
-        <h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title w-100" id="myModalLabel">Agregar Charlista</h4>
       </div>
       <div class="modal-body">
-        ...
+        <div class="row">
+          <div class="col-md-4 mt-3">
+            <app-image-uploader (fileSelected)="onSelect($event)"></app-image-uploader>
+          </div>
+
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input mdbInput type="text"
+                         id="firstName"
+                         class="form-control white-text"
+                         [(ngModel)]="speaker.firstName">
+                  <label for="firstName" class="">Nombre</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input mdbInput type="text"
+                         id="lastName"
+                         class="form-control white-text"
+                         [(ngModel)]="speaker.lastName">
+                  <label for="lastName" class="">Apellido</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form">
+                  <app-country-input></app-country-input>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input mdbInput type="text" id="webSite" class="form-control white-text">
+                  <label for="webSite" class="">Sitio Web</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input mdbInput type="text" id="linkedin" class="form-control white-text">
+                  <label for="linkedin" class="">LinkedIn</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input mdbInput type="text" id="instagram" class="form-control white-text">
+                  <label for="instagram" class="">Instagram</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input mdbInput type="text" id="twitter" class="form-control white-text">
+                  <label for="twitter" class="">Twitter</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form">
+                  <input mdbInput type="text" id="github" class="form-control white-text">
+                  <label for="github" class="">Github</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer bg-dark">
+      <div class="modal-footer">
         <button type="button" mdbBtn color="danger" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>Close</button>
         <button type="button" mdbBtn color="success" class="relative waves-light" mdbWavesEffect>Save!</button>
       </div>
