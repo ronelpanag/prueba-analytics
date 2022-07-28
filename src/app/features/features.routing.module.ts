@@ -3,19 +3,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'feedbacks' },
-
   {
-    path: 'feedbacks',
-    loadChildren: () => import('./feedbacks/feedbacks.module').then(m => m.FeedbacksModule)
+    path: 'communities',
+    loadChildren: () => import('./communities/communities.module').then(m => m.CommunitiesModule)
   },
   {
     path: 'speakers',
     loadChildren: () => import('./speakers/speakers.module').then(m => m.SpeakersModule)
   },
   {
-    path: 'events',
-    loadChildren: () => import('./events/events.module').then(m => m.EventsModule)
+    path: 'talks',
+    loadChildren: () => import('./talks/talks.module').then(m => m.TalksModule)
   }
 ];
 

@@ -1,1 +1,29 @@
-<p>list works!</p>
+<div class="container-fluid p-4">
+  <div class="row">
+    <div class="col-md-6">
+      <span class="h1 font-weight-normal"><u>Charlistas</u></span>
+    </div>
+    <div class="col-md-6">
+      <app-new></app-new>
+    </div>
+  </div>
+
+  <div class="row mt-4 justify-content-center">
+    <div *ngFor="let item of speakers" class="col-md-4">
+      <div class="card mb-3 custom-card" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img [src]="item.image" [alt]="item.firstName" class="card-image">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+            <span class="custom-area text-uppercase"> Republica Dominicana </span><br>
+              <p class="card-text custom-name">{{item.firstName}} {{item.lastName}}</p>
+              <p class="card-text descriptionArea"><small class="text-muted"><a class="text-decoration-underline">Ver detalles</a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
